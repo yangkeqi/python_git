@@ -1,0 +1,25 @@
+Environments:
+    env:
+        test
+    test:
+        url: http://game.test
+        name: Developer
+        excelpath: E:\Test_Auto\test_data\test_excel.xlsx
+#        database : {'host':'127.0.0.1','port':3306,'user':'root','password':'123456','dbname':'milor'}
+    prod:
+        url: https://www.httpbin.org
+        name: prod
+        excelpath: E:\Test_Auto\test_data\test_excel.xlsx
+        database : {'host':'127.0.0.1','port':3306,'user':'root','password':'123456','dbname':'milor'}
+Run_all:
+    Whether : False
+Moudle:
+    #配置行号需要+1跳过表头
+    casesuite01:
+        sheetname : data
+        start : 2
+        end : 3
+#    casesuite02:
+#        sheetname : case01
+#        start : 2
+#        end : 3
